@@ -1295,7 +1295,7 @@ p, a {
 body {
   color: #0e1516;
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 1.2rem;
   overflow-x: hidden;
   line-height: 1.4;
 }
@@ -1424,6 +1424,17 @@ img {
   margin-bottom: 1rem;
 }
 
+.cardIcon {
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cardIcon img {
+  width: 7rem;
+}
+.cardIcon__details h4 {
+  margin: 1.5rem 0;
+}
+
 .btn {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -1467,7 +1478,35 @@ img {
   align-items: center;
 }
 
+.title {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.title h2 {
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  padding: 2rem 0;
+  color: #ffffff;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__social {
+  display: flex;
+  gap: 2rem;
+}
+.footer__social li a {
+  color: #ffffff;
+}
+
 .header {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 3rem 0;
 }
 .header__wrapper {
@@ -1538,4 +1577,264 @@ img {
 }
 .homeAbout__right p {
   margin-bottom: 2rem;
+}
+
+.homeClass {
+  padding: 4rem 0;
+}
+.homeClass__slider {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.homeClass .listButton {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.homeTrainer {
+  padding: 4rem 0;
+}
+.homeTrainer__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.homeTrainer__title h2 {
+  max-width: 40rem;
+}
+.homeTrainer__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.aboutBanner {
+  padding-bottom: 5rem;
+}
+.aboutBanner__top {
+  display: flex;
+}
+.aboutBanner__top--left {
+  margin-top: 3rem;
+}
+.aboutBanner__top--left h1 {
+  width: 50rem;
+}
+.aboutBanner__top--right {
+  margin: auto 0;
+}
+.aboutBanner__bottom--a {
+  grid-area: a;
+}
+.aboutBanner__bottom--b {
+  grid-area: b;
+}
+.aboutBanner__bottom--c {
+  grid-area: c;
+}
+.aboutBanner__bottom {
+  display: grid;
+  grid-template-areas: "a c" "b c";
+}
+.aboutBanner__bottom img {
+  width: 30rem;
+  height: 25rem;
+  margin: 1rem 0;
+}
+.aboutBanner__bottom #pic2 {
+  height: 35rem;
+  margin-top: 5rem;
+}
+.aboutBanner__bottom h3 {
+  margin: 2rem 0;
+}
+.aboutBanner__bottom p {
+  width: 45rem;
+}
+
+.coreValues__wrapper {
+  max-width: 70rem;
+  margin: 0 auto;
+  color: #ffffff;
+  padding: 3rem 0;
+}
+.coreValues__card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.coreValues__text {
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 50rem;
+  margin: 3rem auto;
+}
+.coreValues .cards {
+  display: flex;
+  background-color: #ffffff;
+  padding-left: 2rem;
+}
+.coreValues .cards img {
+  width: 7rem;
+}
+.coreValues .card__details h5 {
+  color: #0e1516;
+  padding: 1rem 0;
+}
+.coreValues .card__details p {
+  color: #0e1516;
+}
+
+.studio__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+.studio__wrapper h2 {
+  width: 40rem;
+  padding-bottom: 1rem;
+}
+.studio__wrapper p {
+  width: 40rem;
+  padding-bottom: 2rem;
+}
+.studio__wrapper iframe {
+  width: 70rem;
+}
+
+.contactBanner {
+  padding: 4rem 0;
+  position: relative;
+}
+.contactBanner__title {
+  max-width: 50rem;
+  margin-bottom: 2rem;
+}
+.contactBanner__wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 5rem;
+}
+.contactBanner__left--name {
+  display: flex;
+  gap: 2rem;
+}
+.contactBanner__left form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contactBanner__left form input {
+  width: 100%;
+  padding: 1rem;
+  background-color: #0e1516;
+}
+.contactBanner__left form textarea {
+  width: 100%;
+  padding: 1rem;
+  background-color: #0e1516;
+  height: 10rem;
+}
+.contactBanner__left form input::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+.contactBanner__left form input::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+.contactBanner__left form input:focus, .contactBanner__left form input:enabled {
+  color: #ffffff;
+}
+.contactBanner__left form textarea::-moz-placeholder {
+  color: #ffffff;
+}
+.contactBanner__left form textarea::placeholder {
+  color: #ffffff;
+}
+.contactBanner__left form textarea:focus, .contactBanner__left form textarea:enabled {
+  color: #ffffff;
+}
+.contactBanner__right {
+  padding: 4rem 4rem;
+  background-color: #ffffff;
+  border: 1px solid #0e1516;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contactBanner__right::after {
+  position: absolute;
+  display: inline-block;
+  content: " ";
+  background-color: #0e1516;
+  width: 40rem;
+  height: 83vh;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: -9;
+}
+
+.contactFaq {
+  padding: 4rem 0;
+}
+.contactFaq__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+.contactFaq__left {
+  max-width: 30rem;
+}
+.contactFaq__left h2 {
+  margin-bottom: 2rem;
+}
+.contactFaq__item {
+  border-bottom: 1px solid #ddd;
+  padding: 1.5rem 0;
+}
+.contactFaq__item--question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.contactFaq__item--question i {
+  transition: 0.5s ease;
+}
+.contactFaq__item--answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.tns-outer {
+  overflow: hidden;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.tns-outer > button {
+  display: none;
+}
+.tns-nav {
+  text-align: center;
+}
+.tns-nav button {
+  width: 1rem;
+  height: 1rem;
+  margin: 2rem 0.5rem;
+  border-radius: 50%;
+  border: none;
+}
+.tns-nav-active {
+  background-color: #0e1516;
 }/*# sourceMappingURL=main.min.css.map */

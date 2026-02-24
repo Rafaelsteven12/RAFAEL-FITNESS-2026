@@ -1,0 +1,104 @@
+@use "../abstract/" as *;
+
+.aboutBanner {
+  padding-bottom: 5rem;
+  &__top {
+    display: flex;
+  }
+  &__top--left {
+    margin-top: 3rem;
+    h1 {
+      width: 50rem;
+    }
+  }
+  &__top--right {
+    margin: auto 0;
+  }
+  &__bottom--a {
+    grid-area: a;
+  }
+  &__bottom--b {
+    grid-area: b;
+  }
+  &__bottom--c {
+    grid-area: c;
+  }
+  &__bottom {
+    display: grid;
+    grid-template-areas:
+      "a c"
+      "b c";
+    img {
+      width: 30rem;
+      height: 25rem;
+      margin: 1rem 0;
+    }
+    #pic2 {
+      height: 35rem;
+      margin-top: 5rem;
+    }
+    h3 {
+      margin: 2rem 0;
+    }
+    p {
+      width: 45rem;
+    }
+  }
+}
+
+.coreValues {
+  &__wrapper {
+    max-width: 70rem;
+    margin: 0 auto;
+    color: $clr--light;
+    padding: 3rem 0;
+  }
+  &__card {
+    @include gridFixed(2, 3rem);
+  }
+  &__text {
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 50rem;
+    margin: 3rem auto;
+  }
+  .cards {
+    display: flex;
+    background-color: $clr--light;
+    padding-left: 2rem;
+    img {
+      width: 7rem;
+    }
+  }
+  .card__details {
+    h5 {
+      color: $clr--dark;
+      padding: 1rem 0;
+    }
+    p {
+      color: $clr--dark;
+    }
+  }
+}
+
+.studio {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 5rem 0;
+    
+    h2 {
+      width: 40rem;
+      padding-bottom: 1rem;
+    }
+    p {
+      width: 40rem;
+      padding-bottom: 2rem;
+    }
+    iframe {
+      width: 70rem;
+    }
+  }
+}
