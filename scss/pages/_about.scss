@@ -4,11 +4,20 @@
   padding-bottom: 5rem;
   &__top {
     display: flex;
+    @include mediaQuery(520px) {
+      flex-direction: column;
+    }
   }
   &__top--left {
     margin-top: 3rem;
     h1 {
       width: 50rem;
+    }
+    @include mediaQuery(520px) {
+      margin-top: 12rem;
+      h1 {
+        width: 25rem;
+      }
     }
   }
   &__top--right {
@@ -28,10 +37,11 @@
     grid-template-areas:
       "a c"
       "b c";
+    grid-template-columns: 1.25fr 1fr;
     img {
-      width: 30rem;
-      height: 25rem;
       margin: 1rem 0;
+      width: 25rem;
+      height: 23rem;
     }
     #pic2 {
       height: 35rem;
@@ -42,6 +52,21 @@
     }
     p {
       width: 45rem;
+      @include mediaQuery(520px) {
+        width: 20rem;
+      }
+    }
+    @include mediaQuery(520px) {
+      display: flex;
+      flex-direction: column;
+      p {
+        width: 20rem;
+      }
+      #pic2 {
+        width: 30rem;
+        height: 25rem;
+        margin-top: 3rem;
+      }
     }
   }
 }
@@ -55,12 +80,18 @@
   }
   &__card {
     @include gridFixed(2, 3rem);
+    @include mediaQuery(520px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__text {
     margin-bottom: 2rem;
     text-align: center;
     width: 50rem;
     margin: 3rem auto;
+    @include mediaQuery(520px) {
+      width: 20rem;
+    }
   }
   .cards {
     display: flex;
@@ -68,6 +99,15 @@
     padding-left: 2rem;
     img {
       width: 7rem;
+    }
+    @include mediaQuery(520px) {
+      display: unset;
+      text-align: center;
+      width: 23rem;
+      padding-left: unset;
+      img {
+        margin-top: 2rem;
+      }
     }
   }
   .card__details {
@@ -88,7 +128,7 @@
     text-align: center;
     align-items: center;
     margin: 5rem 0;
-    
+
     h2 {
       width: 40rem;
       padding-bottom: 1rem;
@@ -99,6 +139,17 @@
     }
     iframe {
       width: 70rem;
+    }
+    @include mediaQuery(520px) {
+      p {
+        width: 25rem;
+      }
+      h2 {
+        width: 25rem;
+      }
+      iframe {
+        width: 25rem;
+      }
     }
   }
 }
